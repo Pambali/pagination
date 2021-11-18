@@ -55,4 +55,4 @@ function createPagination(totalPages, page){
   element.innerHTML = liTag; 
   return liTag; 
 }
-element.innerHTML = createPagination(totalPages, page);
+
