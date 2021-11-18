@@ -2,7 +2,7 @@ const element = document.querySelector(".pagination ul");
 let totalPages = 100;
 let page = 10;
 
-element.innerHTML = createPagination(totalPages, page);
+
 function createPagination(totalPages, page){
   let liTag = '';
   let active;
@@ -55,3 +55,4 @@ function createPagination(totalPages, page){
   element.innerHTML = liTag; 
   return liTag; 
 }
+element.innerHTML = createPagination(totalPages, page);
