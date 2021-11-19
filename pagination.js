@@ -34,7 +34,7 @@ function createPagination(totalPages, page){
       continue;
     }
     if (plength == 0) { 
-      plength = 1;
+      plength = plength+1;
     }
     if(page == plength){ 
       active = "active";
