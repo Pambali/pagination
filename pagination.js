@@ -1,8 +1,8 @@
 const element = document.querySelector(".pagination ul");
-let totalPages = 100;
-let page = 10;
+let totalnoPages = 100;
+let pages = 10;
 
-element.innerHTML = createPagination(totalPages, page);
+element.innerHTML = createPagination(totalnoPages, pages);
 function createPagination(totalPages, page){
   let liTag = '';
   let active;
@@ -11,7 +11,7 @@ function createPagination(totalPages, page){
   if(page > 1){ 
     liTag += `<li class="btn prev" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i> Prev</span></li>`;
   }
-  if(page > 2){ 
+  else if(page > 2){ 
     liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
     if(page > 3){ 
       liTag += `<li class="dots"><span>...</span></li>`;
