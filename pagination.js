@@ -3,7 +3,7 @@ let totalnoPages = 100;
 let pages = 10;
 
 element.innerHTML = createPagination(totalnoPages, pages);
-export function createPagination(totalPages, page) {
+ function createPagination(totalPages, page) {
   let liTag = '';
   let active;
   let beforePage = page - 1;
